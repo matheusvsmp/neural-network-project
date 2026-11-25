@@ -1,0 +1,650 @@
+{
+  "classes": [
+    "glass",
+    "paper",
+    "cardboard",
+    "plastic",
+    "metal",
+    "trash"
+  ],
+  "support_teste": {
+    "glass": 75,
+    "paper": 90,
+    "cardboard": 60,
+    "plastic": 72,
+    "metal": 61,
+    "trash": 21
+  },
+  "distribuicao": [
+    {
+      "classe": "glass",
+      "train": 351,
+      "val": 75,
+      "test": 75
+    },
+    {
+      "classe": "paper",
+      "train": 415,
+      "val": 89,
+      "test": 90
+    },
+    {
+      "classe": "cardboard",
+      "train": 282,
+      "val": 61,
+      "test": 60
+    },
+    {
+      "classe": "plastic",
+      "train": 338,
+      "val": 72,
+      "test": 72
+    },
+    {
+      "classe": "metal",
+      "train": 287,
+      "val": 62,
+      "test": 61
+    },
+    {
+      "classe": "trash",
+      "train": 96,
+      "val": 20,
+      "test": 21
+    }
+  ],
+  "experimentos": {
+    "mlp_128_sem": {
+      "accuracy": 0.6015831134564644,
+      "f1_macro": 0.5643962943209441,
+      "classes": {
+        "glass": {
+          "precision": 0.45569620253164556,
+          "recall": 0.48,
+          "f1": 0.4675324675324675,
+          "support": 75
+        },
+        "paper": {
+          "precision": 0.616822429906542,
+          "recall": 0.7333333333333333,
+          "f1": 0.6700507614213198,
+          "support": 90
+        },
+        "cardboard": {
+          "precision": 0.7857142857142857,
+          "recall": 0.7333333333333333,
+          "f1": 0.7586206896551724,
+          "support": 60
+        },
+        "plastic": {
+          "precision": 0.68,
+          "recall": 0.7083333333333334,
+          "f1": 0.6938775510204082,
+          "support": 72
+        },
+        "metal": {
+          "precision": 0.5319148936170213,
+          "recall": 0.4098360655737705,
+          "f1": 0.46296296296296297,
+          "support": 61
+        },
+        "trash": {
+          "precision": 0.4,
+          "recall": 0.2857142857142857,
+          "f1": 0.3333333333333333,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          36,
+          20,
+          0,
+          8,
+          8,
+          3
+        ],
+        [
+          11,
+          66,
+          4,
+          5,
+          4,
+          0
+        ],
+        [
+          4,
+          4,
+          44,
+          2,
+          4,
+          2
+        ],
+        [
+          4,
+          10,
+          2,
+          51,
+          4,
+          1
+        ],
+        [
+          17,
+          5,
+          3,
+          8,
+          25,
+          3
+        ],
+        [
+          7,
+          2,
+          3,
+          1,
+          2,
+          6
+        ]
+      ]
+    },
+    "mlp_128_com": {
+      "accuracy": 0.5883905013192612,
+      "f1_macro": 0.5610161970126549,
+      "classes": {
+        "glass": {
+          "precision": 0.4716981132075472,
+          "recall": 0.3333333333333333,
+          "f1": 0.390625,
+          "support": 75
+        },
+        "paper": {
+          "precision": 0.6407766990291263,
+          "recall": 0.7333333333333333,
+          "f1": 0.6839378238341969,
+          "support": 90
+        },
+        "cardboard": {
+          "precision": 0.7142857142857143,
+          "recall": 0.75,
+          "f1": 0.7317073170731707,
+          "support": 60
+        },
+        "plastic": {
+          "precision": 0.6621621621621622,
+          "recall": 0.6805555555555556,
+          "f1": 0.6712328767123288,
+          "support": 72
+        },
+        "metal": {
+          "precision": 0.4909090909090909,
+          "recall": 0.4426229508196721,
+          "f1": 0.46551724137931033,
+          "support": 61
+        },
+        "trash": {
+          "precision": 0.3548387096774194,
+          "recall": 0.5238095238095238,
+          "f1": 0.4230769230769231,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          25,
+          17,
+          3,
+          10,
+          14,
+          6
+        ],
+        [
+          10,
+          66,
+          5,
+          6,
+          2,
+          1
+        ],
+        [
+          2,
+          4,
+          45,
+          1,
+          6,
+          2
+        ],
+        [
+          3,
+          9,
+          3,
+          49,
+          4,
+          4
+        ],
+        [
+          12,
+          5,
+          3,
+          7,
+          27,
+          7
+        ],
+        [
+          1,
+          2,
+          4,
+          1,
+          2,
+          11
+        ]
+      ]
+    },
+    "cnn_128_sem": {
+      "accuracy": 0.7335092348284961,
+      "f1_macro": 0.6913782284884292,
+      "classes": {
+        "glass": {
+          "precision": 0.5588235294117647,
+          "recall": 0.76,
+          "f1": 0.6440677966101694,
+          "support": 75
+        },
+        "paper": {
+          "precision": 0.75,
+          "recall": 0.8666666666666667,
+          "f1": 0.8041237113402062,
+          "support": 90
+        },
+        "cardboard": {
+          "precision": 0.9032258064516129,
+          "recall": 0.9333333333333333,
+          "f1": 0.9180327868852459,
+          "support": 60
+        },
+        "plastic": {
+          "precision": 0.828125,
+          "recall": 0.7361111111111112,
+          "f1": 0.7794117647058824,
+          "support": 72
+        },
+        "metal": {
+          "precision": 0.7297297297297297,
+          "recall": 0.4426229508196721,
+          "f1": 0.5510204081632653,
+          "support": 61
+        },
+        "trash": {
+          "precision": 0.7,
+          "recall": 0.3333333333333333,
+          "f1": 0.45161290322580644,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          57,
+          5,
+          1,
+          6,
+          5,
+          1
+        ],
+        [
+          5,
+          78,
+          0,
+          4,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          56,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          8,
+          3,
+          53,
+          2,
+          0
+        ],
+        [
+          25,
+          5,
+          2,
+          1,
+          27,
+          1
+        ],
+        [
+          8,
+          5,
+          0,
+          0,
+          1,
+          7
+        ]
+      ]
+    },
+    "cnn_128_com": {
+      "accuracy": 0.712401055408971,
+      "f1_macro": 0.6891875946079762,
+      "classes": {
+        "glass": {
+          "precision": 0.647887323943662,
+          "recall": 0.6133333333333333,
+          "f1": 0.6301369863013698,
+          "support": 75
+        },
+        "paper": {
+          "precision": 0.8068181818181818,
+          "recall": 0.7888888888888889,
+          "f1": 0.797752808988764,
+          "support": 90
+        },
+        "cardboard": {
+          "precision": 0.8888888888888888,
+          "recall": 0.9333333333333333,
+          "f1": 0.9105691056910569,
+          "support": 60
+        },
+        "plastic": {
+          "precision": 0.796875,
+          "recall": 0.7083333333333334,
+          "f1": 0.75,
+          "support": 72
+        },
+        "metal": {
+          "precision": 0.6923076923076923,
+          "recall": 0.4426229508196721,
+          "f1": 0.54,
+          "support": 61
+        },
+        "trash": {
+          "precision": 0.35185185185185186,
+          "recall": 0.9047619047619048,
+          "f1": 0.5066666666666667,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          46,
+          4,
+          0,
+          9,
+          4,
+          12
+        ],
+        [
+          1,
+          71,
+          0,
+          4,
+          4,
+          10
+        ],
+        [
+          0,
+          2,
+          56,
+          0,
+          0,
+          2
+        ],
+        [
+          4,
+          7,
+          4,
+          51,
+          3,
+          3
+        ],
+        [
+          19,
+          4,
+          3,
+          0,
+          27,
+          8
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          19
+        ]
+      ]
+    },
+    "cnn_256_sem": {
+      "accuracy": 0.7783641160949868,
+      "f1_macro": 0.7388822328497016,
+      "classes": {
+        "glass": {
+          "precision": 0.6276595744680851,
+          "recall": 0.7866666666666666,
+          "f1": 0.6982248520710059,
+          "support": 75
+        },
+        "paper": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8888888888888888,
+          "f1": 0.8602150537634409,
+          "support": 90
+        },
+        "cardboard": {
+          "precision": 0.9180327868852459,
+          "recall": 0.9333333333333333,
+          "f1": 0.9256198347107438,
+          "support": 60
+        },
+        "plastic": {
+          "precision": 0.835820895522388,
+          "recall": 0.7777777777777778,
+          "f1": 0.8057553956834532,
+          "support": 72
+        },
+        "metal": {
+          "precision": 0.6851851851851852,
+          "recall": 0.6065573770491803,
+          "f1": 0.6434782608695652,
+          "support": 61
+        },
+        "trash": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          59,
+          1,
+          2,
+          7,
+          6,
+          0
+        ],
+        [
+          4,
+          80,
+          0,
+          3,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          56,
+          0,
+          1,
+          0
+        ],
+        [
+          7,
+          5,
+          1,
+          56,
+          3,
+          0
+        ],
+        [
+          18,
+          4,
+          1,
+          1,
+          37,
+          0
+        ],
+        [
+          6,
+          3,
+          1,
+          0,
+          4,
+          7
+        ]
+      ]
+    },
+    "cnn_512_sem": {
+      "accuracy": 0.7361477572559367,
+      "f1_macro": 0.6834616702385753,
+      "classes": {
+        "glass": {
+          "precision": 0.5631067961165048,
+          "recall": 0.7733333333333333,
+          "f1": 0.651685393258427,
+          "support": 75
+        },
+        "paper": {
+          "precision": 0.8144329896907216,
+          "recall": 0.8777777777777778,
+          "f1": 0.8449197860962567,
+          "support": 90
+        },
+        "cardboard": {
+          "precision": 0.8870967741935484,
+          "recall": 0.9166666666666666,
+          "f1": 0.9016393442622951,
+          "support": 60
+        },
+        "plastic": {
+          "precision": 0.8,
+          "recall": 0.7777777777777778,
+          "f1": 0.7887323943661971,
+          "support": 72
+        },
+        "metal": {
+          "precision": 0.6410256410256411,
+          "recall": 0.4098360655737705,
+          "f1": 0.5,
+          "support": 61
+        },
+        "trash": {
+          "precision": 0.75,
+          "recall": 0.2857142857142857,
+          "f1": 0.41379310344827586,
+          "support": 21
+        }
+      },
+      "confusion_matrix": [
+        [
+          58,
+          4,
+          1,
+          6,
+          5,
+          1
+        ],
+        [
+          5,
+          79,
+          0,
+          4,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          55,
+          0,
+          2,
+          0
+        ],
+        [
+          3,
+          7,
+          2,
+          56,
+          3,
+          1
+        ],
+        [
+          25,
+          5,
+          2,
+          4,
+          25,
+          0
+        ],
+        [
+          11,
+          0,
+          2,
+          0,
+          2,
+          6
+        ]
+      ]
+    }
+  },
+  "modelo_selecionado_por_f1_macro_validacao": "cnn_512_sem",
+  "total_erros_modelo_selecionado": 100,
+  "erros_modelo_selecionado": [
+    {
+      "path": "dataset-resized\\plastic\\plastic294.jpg",
+      "real": "plastic",
+      "prevista": "glass",
+      "probabilidade_prevista": 0.4735342562198639
+    },
+    {
+      "path": "dataset-resized\\paper\\paper358.jpg",
+      "real": "paper",
+      "prevista": "plastic",
+      "probabilidade_prevista": 0.5679574012756348
+    },
+    {
+      "path": "dataset-resized\\metal\\metal90.jpg",
+      "real": "metal",
+      "prevista": "plastic",
+      "probabilidade_prevista": 0.2559148669242859
+    },
+    {
+      "path": "dataset-resized\\trash\\trash130.jpg",
+      "real": "trash",
+      "prevista": "glass",
+      "probabilidade_prevista": 0.366100013256073
+    },
+    {
+      "path": "dataset-resized\\paper\\paper394.jpg",
+      "real": "paper",
+      "prevista": "glass",
+      "probabilidade_prevista": 0.35158219933509827
+    },
+    {
+      "path": "dataset-resized\\paper\\paper584.jpg",
+      "real": "paper",
+      "prevista": "plastic",
+      "probabilidade_prevista": 0.5176523923873901
+    }
+  ]
+}
