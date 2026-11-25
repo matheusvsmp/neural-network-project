@@ -1,0 +1,7 @@
+﻿path,real,prevista,probabilidade_prevista
+dataset-resized\plastic\plastic294.jpg,plastic,glass,0.4735342562198639
+dataset-resized\paper\paper358.jpg,paper,plastic,0.5679574012756348
+dataset-resized\metal\metal90.jpg,metal,plastic,0.2559148669242859
+dataset-resized\trash\trash130.jpg,trash,glass,0.366100013256073
+dataset-resized\paper\paper394.jpg,paper,glass,0.35158219933509827
+dataset-resized\paper\paper584.jpg,paper,plastic,0.5176523923873901
