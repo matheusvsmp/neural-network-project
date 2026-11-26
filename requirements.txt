@@ -1,5 +1,17 @@
-pillow
-numpy
-matplotlib
-scikit-learn
-tensorflow
+# TensorFlow: versao registrada nos historicos de treino (Google Colab, GPU Tesla T4)
+tensorflow==2.21.0
+
+# Demais pacotes: versoes minimas com as quais o 05_resultados.py foi executado
+numpy>=2.5
+pandas>=3.0
+scikit-learn>=1.9
+matplotlib>=3.11
+pillow>=12.3
+tabulate>=0.10
+
+# Para abrir os notebooks (.ipynb) localmente
+ipykernel
+notebook
+
+# Extra YOLO (historico: ultralytics 8.4.218, PyTorch 2.14.1)
+# pip install ultralytics

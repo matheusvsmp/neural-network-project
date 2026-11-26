@@ -1,0 +1,5 @@
+{
+ "melhor_modelo_por_f1_macro_val": "cnn_128_com",
+ "n_erros_teste": 109,
+ "n_teste": 379
+}
