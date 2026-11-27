@@ -46,7 +46,7 @@ Diferenças entre modelos de uma a poucas imagens, em um total de 379, não são
 
 ```
 .
-├── 01_eda.ipynb              notebook da análise exploratória dos dados (EDA)
+├── treino_eda_dados_colab.ipynb  notebook da análise exploratória dos dados (EDA)
 ├── 01_eda_split.py           inspeção do dataset, split 70/15/15 (semente 42), pesos de classe, figuras
 ├── 02_mlp.py                 treino dos experimentos mlp_128_sem e mlp_128_com
 ├── 03_cnn.py                 treino dos experimentos cnn_128_sem, cnn_128_com, cnn_256_sem, cnn_512_sem
@@ -142,7 +142,7 @@ Para que a comparação de custo seja válida, todos os experimentos devem ser t
 ```bash
 python 01_eda_split.py --data_dir dataset-resized
 ```
-O script verifica a integridade das imagens, os tamanhos, os canais e as duplicatas, e gera o arquivo `split.json` e as figuras de `figuras/eda/`. O resultado é determinístico (semente 42), não sendo necessário repetir a execução. A análise também está documentada, com saídas e figuras, no notebook `01_eda.ipynb`.
+O script verifica a integridade das imagens, os tamanhos, os canais e as duplicatas, e gera o arquivo `split.json` e as figuras de `figuras/eda/`. O resultado é determinístico (semente 42), não sendo necessário repetir a execução. A análise também está documentada, com saídas e figuras, no notebook `treino_eda_dados_colab.ipynb`.
 
 ### 5.4 Extra YOLO
 ```bash
